@@ -1,15 +1,6 @@
-import { CoverageReport } from 'monocart-coverage-reports';
-
-const coverageOptions = {
-    // logging: 'debug',
-    name: 'My Storybook Coverage Report',
-    reports: ['v8', 'console-details'],
-    outputDir: './coverage-reports'
-};
-
-const coverageReport = new CoverageReport(coverageOptions);
-coverageReport.cleanCache();
-
+import MCR from 'monocart-coverage-reports';
+import coverageOptions from '../mcr.config.js';
+// collect coverage data from Playwright page
 const config = {
 
     async preVisit(page, context) {
@@ -32,12 +23,7 @@ const config = {
             page.coverage.stopCSSCoverage()
         ]);
         const coverageList = [... jsCoverage, ... cssCoverage];
-        await coverageReport.add(coverageList);
-    },
-
-    // NOTE: There is no globalTeardown hook for now
-    async globalTeardown() {
-        await coverageReport.generate();
+        await MCR(coverageOptions).add(coverageList);
     }
 
 };
