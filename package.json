@@ -1,0 +1,31 @@
+{
+    "name": "storybook-monocart-coverage",
+    "version": "1.0.0",
+    "description": "Storybook test runner V8 coverage example for monocart coverage reports",
+    "main": "",
+    "scripts": {
+        "dev": "storybook dev -p 6006",
+        "build": "storybook build",
+        "test": "test-storybook"
+    },
+    "devDependencies": {
+        "@storybook/addon-essentials": "^7.6.17",
+        "@storybook/addon-interactions": "^7.6.17",
+        "@storybook/addon-links": "^7.6.17",
+        "@storybook/blocks": "^7.6.17",
+        "@storybook/test": "^7.6.17",
+        "@storybook/test-runner": "^0.16.0",
+        "@storybook/vue3": "^7.6.17",
+        "@storybook/vue3-webpack5": "^7.6.17",
+        "@vue/compiler-sfc": "^3.4.20",
+        "eslint": "^8.57.0",
+        "eslint-config-plus": "^1.0.6",
+        "eslint-plugin-html": "^8.0.0",
+        "monocart-coverage-reports": "^2.5.9",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "storybook": "^7.6.17",
+        "vue-loader": "^17.4.2"
+    },
+    "dependencies": {}
+}
