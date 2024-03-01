@@ -11,7 +11,7 @@ npm i monocart coverage reports -D
 - Unfortunately, there is no `globalTeardown` test hook to generate coverage reports, see Step 3.
 
 ## Step 3, Generate Coverage Reports with `mcr` CLI
-Fortunately, we can use `mcr` CLI instead of `globalTeardown`, see [mcr.config.js](mcr.config.js), check [monocart coverage reports](https://github.com/cenfun/monocart-coverage-reports) for more coverage options.
+Fortunately, we can use `mcr` CLI instead of `globalTeardown`, see [mcr.config.js](mcr.config.js)
 
 ```sh
 mcr test-storybook
@@ -34,3 +34,6 @@ And run:
 npm run dev
 npm run test
 ```
+The coverage report will be found here: `coverage-reports/index.html`
+
+Check [monocart coverage reports](https://github.com/cenfun/monocart-coverage-reports) for more coverage options.
