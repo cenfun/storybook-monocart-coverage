@@ -8,28 +8,12 @@ npm i monocart coverage reports -D
 
 ## Step 2, Collect V8 Coverage Data
 - Collect coverage data with hooks `preVisit` and `postVisit`, see [.storybook/test-runner.js](.storybook/test-runner.js)
-- Unfortunately, there is no `globalTeardown` test hook to generate coverage reports, see Step 3.
 
-## Step 3, Generate Coverage Reports with `mcr` CLI
-Fortunately, we can use `mcr` CLI instead of `globalTeardown`, see [mcr.config.js](mcr.config.js)
+## Step 3, Generate Coverage Reports
+- Create config for `globalTeardown`, see [test-runner-jest.config.js](test-runner-jest.config.js)
+- Create [global-teardown.js](global-teardown.js) for generating coverage reports
+- Set coverage options in config file [mcr.config.js](mcr.config.js)
 
-```sh
-mcr test-storybook
-```
-
-Add scripts:
-```js
-// package.json
-{
-    "scripts": {
-        "dev": "storybook dev -p 6006",
-        "build": "storybook build",
-        "test": "mcr test-storybook"
-    },
-}
-```
-
-And run:
 ```sh
 npm run dev
 npm run test
