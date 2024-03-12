@@ -3,7 +3,7 @@ Storybook test runner V8 coverage example for [monocart coverage reports](https:
 
 ## Step 1, Install
 ```
-npm i monocart coverage reports -D
+npm i monocart-coverage-reports -D
 ```
 
 ## Step 2, Collect V8 Coverage Data
