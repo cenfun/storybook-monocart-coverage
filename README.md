@@ -21,3 +21,7 @@ npm run test
 The coverage report will be found here: `coverage-reports/index.html`
 
 Check [monocart coverage reports](https://github.com/cenfun/monocart-coverage-reports) for more coverage options.
+
+
+## Known Issue
+- test with storybook latest version 8, but not passed, downgrade to version 7.
