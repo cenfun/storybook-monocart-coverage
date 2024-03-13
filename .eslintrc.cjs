@@ -17,9 +17,7 @@ module.exports = {
         'html'
     ],
 
-    'extends': [
-        'plus'
-    ],
+    'extends': ['plus', 'plugin:storybook/recommended'],
 
     'parserOptions': {
         'ecmaVersion': 'latest',
