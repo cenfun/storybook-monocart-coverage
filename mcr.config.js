@@ -21,6 +21,9 @@ const coverageOptions = {
     // },
 
     sourcePath: (filePath, info) => {
+
+        filePath = filePath.replace('127.0.0.1-6006/', '');
+
         if (!filePath.includes('/') && info.distFile) {
             return `${path.dirname(info.distFile)}/${filePath}`;
         }
