@@ -6,7 +6,7 @@ module.exports = async function globalTeardown(globalConfig) {
 
     await playwrightGlobalTeardown(globalConfig);
 
-    // console.log('globalTeardown');
+    console.log('globalTeardown');
 
     await MCR(coverageOptions).generate();
 

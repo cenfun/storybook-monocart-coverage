@@ -6,6 +6,7 @@ module.exports = {
 
     ... testRunnerConfig,
 
+    globalSetup: './global-setup.js',
     globalTeardown: './global-teardown.js'
 
 };

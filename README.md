@@ -10,8 +10,8 @@ npm i monocart-coverage-reports -D
 - Collect coverage data with hooks `preVisit` and `postVisit`, see [.storybook/test-runner.js](.storybook/test-runner.js)
 
 ## Step 3, Generate Coverage Reports
-- Create config for `globalTeardown`, see [test-runner-jest.config.js](test-runner-jest.config.js)
-- Create [global-teardown.js](global-teardown.js) for generating coverage reports
+- Create config for `globalSetup` and `globalTeardown`, see [test-runner-jest.config.js](test-runner-jest.config.js)
+- Create [global-setup.js](global-setup.js) and [global-teardown.js](global-teardown.js) for generating coverage reports
 - Set coverage options in config file [mcr.config.js](mcr.config.js)
 
 ```sh
