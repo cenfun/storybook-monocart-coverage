@@ -12,6 +12,7 @@ const coverageOptions = {
     ],
 
     entryFilter: {
+        '**/*.css': false,
         '**/stories/**': true
     },
 
