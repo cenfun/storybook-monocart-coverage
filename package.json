@@ -1,34 +1,35 @@
 {
-  "name": "storybook-monocart-coverage",
-  "version": "1.0.0",
-  "description": "Storybook test runner V8 coverage example for monocart coverage reports",
-  "type": "module",
-  "main": "",
-  "scripts": {
-    "dev": "storybook dev -p 6006",
-    "build": "storybook build",
-    "test": "test-storybook",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@chromatic-com/storybook": "^1.2.18",
-    "@storybook/addon-essentials": "^8.0.0",
-    "@storybook/addon-interactions": "^8.0.0",
-    "@storybook/addon-links": "^8.0.0",
-    "@storybook/addon-onboarding": "^8.0.0",
-    "@storybook/blocks": "^8.0.0",
-    "@storybook/react": "^8.0.0",
-    "@storybook/react-vite": "^8.0.0",
-    "@storybook/test": "^8.0.0",
-    "@storybook/test-runner": "^0.17.0",
-    "eslint": "^8.57.0",
-    "eslint-config-plus": "^1.0.6",
-    "eslint-plugin-html": "^8.0.0",
-    "eslint-plugin-storybook": "^0.8.0",
-    "monocart-coverage-reports": "^2.7.1",
-    "prop-types": "^15.8.1",
-    "storybook": "^8.0.0"
-  }
+    "name": "storybook-monocart-coverage",
+    "version": "1.0.0",
+    "description": "Storybook test runner V8 coverage example for monocart coverage reports",
+    "type": "module",
+    "main": "",
+    "scripts": {
+        "dev": "storybook dev -p 6006",
+        "build": "storybook build",
+        "test": "test-storybook",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
+    },
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@chromatic-com/storybook": "^1.2.23",
+        "@storybook/addon-essentials": "^8.0.1",
+        "@storybook/addon-interactions": "^8.0.1",
+        "@storybook/addon-links": "^8.0.1",
+        "@storybook/addon-onboarding": "^8.0.1",
+        "@storybook/blocks": "^8.0.1",
+        "@storybook/react": "^8.0.1",
+        "@storybook/react-vite": "^8.0.1",
+        "@storybook/test": "^8.0.1",
+        "@storybook/test-runner": "^0.17.0",
+        "eslint": "^8.57.0",
+        "eslint-config-plus": "^1.0.6",
+        "eslint-plugin-html": "^8.0.0",
+        "eslint-plugin-storybook": "^0.8.0",
+        "monocart-coverage-reports": "^2.7.4",
+        "prop-types": "^15.8.1",
+        "storybook": "^8.0.1"
+    }
 }
