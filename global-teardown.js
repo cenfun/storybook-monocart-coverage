@@ -2,7 +2,7 @@ import { globalTeardown as playwrightGlobalTeardown } from 'jest-playwright-pres
 import MCR from 'monocart-coverage-reports';
 import coverageOptions from './mcr.config.js';
 
-module.exports = async function globalTeardown(globalConfig) {
+export default async function globalTeardown(globalConfig) {
 
     await playwrightGlobalTeardown(globalConfig);
 
@@ -10,4 +10,4 @@ module.exports = async function globalTeardown(globalConfig) {
 
     await MCR(coverageOptions).generate();
 
-};
+}

@@ -2,7 +2,7 @@ import { globalSetup as playwrightGlobalSetup } from 'jest-playwright-preset';
 import MCR from 'monocart-coverage-reports';
 import coverageOptions from './mcr.config.js';
 
-module.exports = async function globalSetup(globalConfig) {
+export default async function globalSetup(globalConfig) {
 
     await playwrightGlobalSetup(globalConfig);
 
@@ -10,4 +10,4 @@ module.exports = async function globalSetup(globalConfig) {
 
     await MCR(coverageOptions).cleanCache();
 
-};
+}

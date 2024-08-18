@@ -5,9 +5,7 @@ const coverageOptions = {
 
     name: 'My Storybook Coverage Report',
     reports: [
-        ['console-details', {
-
-        }],
+        'console-details',
         'v8'
     ],
 
@@ -23,7 +21,10 @@ const coverageOptions = {
 
     sourcePath: (filePath, info) => {
 
-        filePath = filePath.replace('127.0.0.1-6006/', '');
+        const str = '127.0.0.1-6006/';
+        if (filePath.startsWith(str)) {
+            return filePath.slice(str.length);
+        }
 
         if (!filePath.includes('/') && info.distFile) {
             return `${path.dirname(info.distFile)}/${filePath}`;
